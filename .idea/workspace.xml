@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="702afdcf-1780-4e49-b5bb-ed070723f97b" name="Default Changelist" comment="" />
+    <list default="true" id="702afdcf-1780-4e49-b5bb-ed070723f97b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/InsertStringSlice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/RemoveStringSlice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/mult_returnval.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/StringAndStrConv.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/StringAndStrConv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main2.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/main2.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,38 +33,33 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1sI32heKgNxMojQeYQbKL0bxNuO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Build.go build CzyCoding/main">
-    <configuration name="go build CzyCoding/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="CzyCoding" />
-      <working_directory value="$PROJECT_DIR$/main" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main/StringAndStrConv.go" />
-      <package value="CzyCoding/main" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="CzyCoding" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main/main2.go" />
-      <package value="CzyCoding" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codes\go\src\CzyCoding\service" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="CzyCoding" />
       <working_directory value="$PROJECT_DIR$" />
@@ -56,22 +69,9 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="CzyCoding" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/basic/main.go" />
-      <package value="CzyCoding" />
-      <directory value="$PROJECT_DIR$" />
-      <output_directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build CzyCoding/main" />
         <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main2.go" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -79,56 +79,118 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="219" key="FileChooserDialogImpl" timestamp="1628931229595">
+    <state x="702" y="317" key="#Go_Modules" timestamp="1635585296393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="219" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628931229595" />
-    <state width="1865" height="298" key="GridCell.Tab.0.bottom" timestamp="1630142906815">
+    <state x="702" y="317" key="#Go_Modules/0.0.1920.1040@0.0.1920.1040" timestamp="1635585296393" />
+    <state x="410" y="169" width="1099" height="832" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635584431493">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630142906815" />
-    <state width="1865" height="298" key="GridCell.Tab.0.center" timestamp="1630142906815">
+    <state x="410" y="169" width="1099" height="832" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635584431493" />
+    <state x="834" y="351" key="EnvironmentVariablesDialog" timestamp="1635585295362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630142906815" />
-    <state width="1865" height="298" key="GridCell.Tab.0.left" timestamp="1630142906815">
+    <state x="834" y="351" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635585295362" />
+    <state x="687" y="219" key="FileChooserDialogImpl" timestamp="1633603567579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630142906815" />
-    <state width="1865" height="298" key="GridCell.Tab.0.right" timestamp="1630142906815">
+    <state x="687" y="219" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633603567579" />
+    <state width="1865" height="298" key="GridCell.Tab.0.bottom" timestamp="1635584885322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630142906815" />
-    <state width="1865" height="255" key="GridCell.Tab.1.bottom" timestamp="1630135934255">
+    <state width="1865" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
+    <state width="1865" height="298" key="GridCell.Tab.0.center" timestamp="1635584885322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="255" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630135934255" />
-    <state width="1865" height="255" key="GridCell.Tab.1.center" timestamp="1630135934255">
+    <state width="1865" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
+    <state width="1865" height="298" key="GridCell.Tab.0.left" timestamp="1635584885322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="255" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630135934255" />
-    <state width="1865" height="255" key="GridCell.Tab.1.left" timestamp="1630135934255">
+    <state width="1865" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
+    <state width="1865" height="298" key="GridCell.Tab.0.right" timestamp="1635584885322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="255" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630135934255" />
-    <state width="1865" height="255" key="GridCell.Tab.1.right" timestamp="1630135934255">
+    <state width="1865" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
+    <state width="1865" height="255" key="GridCell.Tab.1.bottom" timestamp="1633872878290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="255" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630135934255" />
+    <state width="1865" height="255" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633872878290" />
+    <state width="1865" height="255" key="GridCell.Tab.1.center" timestamp="1633872878290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="255" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633872878290" />
+    <state width="1865" height="255" key="GridCell.Tab.1.left" timestamp="1633872878290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="255" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633872878290" />
+    <state width="1865" height="255" key="GridCell.Tab.1.right" timestamp="1633872878290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="255" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633872878290" />
+    <state x="347" y="78" key="SettingsEditor" timestamp="1635583362054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635583362054" />
+    <state x="452" y="191" key="Vcs.Push.Dialog.v2" timestamp="1633599242742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="191" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1633599242742" />
+    <state x="734" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633598865957">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1633598865957" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main/StringAndStrConv.go</url>
+          <url>file://$PROJECT_DIR$/service/StringAndStrConv.go</url>
           <line>41</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main/StringAndStrConv.go</url>
+          <url>file://$PROJECT_DIR$/service/StringAndStrConv.go</url>
           <line>42</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../../../../GO/src/strings/strings.go</url>
+          <line>762</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../../../../GO/src/strings/strings.go</url>
+          <line>775</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../../../../GO/src/strings/strings.go</url>
+          <line>776</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main/main.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
