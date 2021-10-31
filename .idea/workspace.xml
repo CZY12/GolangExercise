@@ -10,15 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702afdcf-1780-4e49-b5bb-ed070723f97b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/InsertStringSlice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/RemoveStringSlice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/mult_returnval.go" afterDir="false" />
+    <list default="true" id="702afdcf-1780-4e49-b5bb-ed070723f97b" name="Default Changelist" comment="切片练习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/StringAndStrConv.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/StringAndStrConv.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main2.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/main2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/InsertStringSlice.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/InsertStringSlice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/RemoveStringSlice.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/RemoveStringSlice.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +89,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="切片练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="切片练习" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -114,22 +112,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="219" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633603567579" />
-    <state width="1865" height="298" key="GridCell.Tab.0.bottom" timestamp="1635584885322">
+    <state width="1865" height="298" key="GridCell.Tab.0.bottom" timestamp="1635667443891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
-    <state width="1865" height="298" key="GridCell.Tab.0.center" timestamp="1635584885322">
+    <state width="1865" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1635667443891" />
+    <state width="1865" height="298" key="GridCell.Tab.0.center" timestamp="1635667443890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
-    <state width="1865" height="298" key="GridCell.Tab.0.left" timestamp="1635584885322">
+    <state width="1865" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1635667443890" />
+    <state width="1865" height="298" key="GridCell.Tab.0.left" timestamp="1635667443890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
-    <state width="1865" height="298" key="GridCell.Tab.0.right" timestamp="1635584885322">
+    <state width="1865" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1635667443890" />
+    <state width="1865" height="298" key="GridCell.Tab.0.right" timestamp="1635667443891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1635584885322" />
+    <state width="1865" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1635667443891" />
     <state width="1865" height="255" key="GridCell.Tab.1.bottom" timestamp="1633872878290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -150,10 +148,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635583362054" />
-    <state x="452" y="191" key="Vcs.Push.Dialog.v2" timestamp="1633599242742">
+    <state x="452" y="191" key="Vcs.Push.Dialog.v2" timestamp="1635601783478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="191" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1633599242742" />
+    <state x="452" y="191" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635601783478" />
     <state x="734" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633598865957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -189,7 +187,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main/main.go</url>
-          <line>31</line>
+          <line>58</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

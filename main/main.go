@@ -24,8 +24,32 @@ func main() {
 	//	fmt.Printf("%2.2f /",100*rand.Float32())
 	//
 	//}
+
+	stt1 := "helloworld"
+	fmt.Println(stt1[len(stt1)/2:] + stt1[:len(stt1)/2])
+
+	fmt.Println(service.ReverseString(stt1))
+	var isss = []string{"1", "2", "2", "3", "7"}
+	fmt.Println(service.SearchNoEq(isss))
+	var i = []string{"1", "2", "3", "7"}
+	i = i[1:2]
+
+	so := []int{1, 2, 3, 4, 5, 6, 7}
+
+	so = service.BubbleSort(so)
+
+	so = service.MapFunc(service.MapFunc1, so)
+
+	fmt.Println(so)
+
+	fmt.Println(len(i))
+	fmt.Println(i[0])
 	var str = []string{"1", "2", "3", "7"}
 	var newSlice = []string{"4", "5", "6"}
+
+	cutStr, end := service.CutStr("dsdsd", 2)
+
+	fmt.Println(cutStr, "----", end)
 
 	var ns = service.InsertStringSlice(newSlice, str, 3)
 

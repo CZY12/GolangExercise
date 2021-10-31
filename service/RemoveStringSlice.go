@@ -9,6 +9,8 @@ func RemoveStringSlice(str []string, start, end int) (ns []string) {
 			continue
 		}
 		ns = append(ns, num)
+
+		ns = append(str[:start], str[end:]...)
 	}
 	return
 }
