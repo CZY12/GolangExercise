@@ -1,0 +1,7 @@
+application: main
+version: 0-1-test
+runtime: go
+api_version: 3
+handlers:
+- url: /.*
+script: _go_app
