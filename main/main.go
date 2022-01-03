@@ -1,15 +1,28 @@
 package main
 
 import (
-	"CzyCoding/service"
 	"fmt"
-	"net/http"
-	"text/template"
-
-	urlshortener "google.golang.org/api/urlshortener/v1"
+	"io/ioutil"
+	"os"
 )
 
 func main() {
+
+	inputFile := "products.txt"
+	outputFile := "products_copy.txt"
+	file, err := ioutil.ReadFile(inputFile)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "File Error : %s\n", err)
+
+	}
+	fmt.Printf("%s\n", string(file))
+
+	err = ioutil.WriteFile(outputFile, file, 0644)
+
+	if err != nil {
+		panic(err.Error())
+	}
+
 	//for i := 0; i < 10; i++ {
 	//	a := rand.Int()
 	//	fmt.Printf("%d / ",a)
@@ -28,28 +41,28 @@ func main() {
 	//	fmt.Printf("%2.2f /",100*rand.Float32())
 	//
 	//}
-
-	voo := new(service.Voodoo)
-	voo.Magic()
-	voo.Base.Magic()
-	voo.MoreMagic()
-	merced := new(service.Mercedes)
-
-	merced.SetWheel(4)
-	merced.SayHiToMerkel()
-	merced.NumberOfWheels()
-	merced.Start()
-	merced.Stop()
-
-	e := new(service.Employee)
-	e.SetSalary(10)
-	raise := e.GiveRaise(0.1)
-	fmt.Println(raise)
-
-	http.HandleFunc("/", root)
-	http.HandleFunc("short", short)
-	http.HandleFunc("/long", long)
-	http.ListenAndServe("localhost:8080", nil)
+	//
+	//voo := new(service.Voodoo)
+	//voo.Magic()
+	//voo.Base.Magic()
+	//voo.MoreMagic()
+	//merced := new(service.Mercedes)
+	//
+	//merced.SetWheel(4)
+	//merced.SayHiToMerkel()
+	//merced.NumberOfWheels()
+	//merced.Start()
+	//merced.Stop()
+	//
+	//e := new(service.Employee)
+	//e.SetSalary(10)
+	//raise := e.GiveRaise(0.1)
+	//fmt.Println(raise)
+	//
+	//http.HandleFunc("/", root)
+	//http.HandleFunc("short", short)
+	//http.HandleFunc("/long", long)
+	//http.ListenAndServe("localhost:8080", nil)
 
 	//service.BigAdd()
 	//
@@ -102,44 +115,45 @@ func main() {
 
 }
 
-var rootHtmpInpl = template.Must(template.New("rootHtml").Parse(`
-<html><body>
-<h1>URL SHORTENER</h1>
-{{if .}}{{.}}<br /><br />{{end}}
-<form action="/short" type="POST">
-Shorten this: <input type="text" name="longUrl" />
-<input type="submit" value="Give me the short URL" />
-</form>
-<br />
-<form action="/long" type="POST">
-Expand this: http://goo.gl/<input type="text" name="shortUrl" />
-<input type="submit" value="Give me the long URL" />
-</form>
-</body></html>
-`))
-
-func root(w http.ResponseWriter, r *http.Request) {
-	rootHtmpInpl.Execute(w, nil)
-}
-
-func short(w http.ResponseWriter, r *http.Request) {
-	longUtl := r.FormValue("longUrl")
-	s, _ := urlshortener.New(http.DefaultClient)
-	do, _ := s.Url.Insert(&urlshortener.Url{LongUrl: longUtl}).Do()
-
-	rootHtmpInpl.Execute(w, fmt.Sprintf("Shortened version of %s is : %s",
-		longUtl, do.Id))
-
-}
-
-func long(w http.ResponseWriter, r *http.Request) {
-	shortUrl := "http://goo.gl/" + r.FormValue("shortUrl")
-	s, _ := urlshortener.New(http.DefaultClient)
-	do, err := s.Url.Get(shortUrl).Do()
-	if err != nil {
-		fmt.Println("error: %v", err)
-		return
-	}
-	rootHtmpInpl.Execute(w, fmt.Sprintf("Longer version of %s is : %s",
-		shortUrl, do.LongUrl))
-}
+//
+//var rootHtmpInpl = template.Must(template.New("rootHtml").Parse(`
+//<html><body>
+//<h1>URL SHORTENER</h1>
+//{{if .}}{{.}}<br /><br />{{end}}
+//<form action="/short" type="POST">
+//Shorten this: <input type="text" name="longUrl" />
+//<input type="submit" value="Give me the short URL" />
+//</form>
+//<br />
+//<form action="/long" type="POST">
+//Expand this: http://goo.gl/<input type="text" name="shortUrl" />
+//<input type="submit" value="Give me the long URL" />
+//</form>
+//</body></html>
+//`))
+//
+//func root(w http.ResponseWriter, r *http.Request) {
+//	rootHtmpInpl.Execute(w, nil)
+//}
+//
+//func short(w http.ResponseWriter, r *http.Request) {
+//	longUtl := r.FormValue("longUrl")
+//	s, _ := urlshortener.New(http.DefaultClient)
+//	do, _ := s.Url.Insert(&urlshortener.Url{LongUrl: longUtl}).Do()
+//
+//	rootHtmpInpl.Execute(w, fmt.Sprintf("Shortened version of %s is : %s",
+//		longUtl, do.Id))
+//
+//}
+//
+//func long(w http.ResponseWriter, r *http.Request) {
+//	shortUrl := "http://goo.gl/" + r.FormValue("shortUrl")
+//	s, _ := urlshortener.New(http.DefaultClient)
+//	do, err := s.Url.Get(shortUrl).Do()
+//	if err != nil {
+//		fmt.Println("error: %v", err)
+//		return
+//	}
+//	rootHtmpInpl.Execute(w, fmt.Sprintf("Longer version of %s is : %s",
+//		shortUrl, do.LongUrl))
+//}
